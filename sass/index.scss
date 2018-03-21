@@ -1,0 +1,304 @@
+@charset "utf-8";
+// 公共样式
+$rem:75;//定义页面尺寸
+$color_pub:#1d2228;
+$color_menu:#101419;
+$color_f:#ccc;
+body {
+    margin: 0px;
+    font-size: 0.21333333rem;
+    font-family: Arial, '微软雅黑';
+    background:$color_menu;
+  }
+  input {
+    -webkit-appearance: none;
+  }
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  img {
+    border: none;
+    vertical-align: middle;
+  }
+  .clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+div{
+    box-sizing: border-box;
+}
+
+//   /*LESS*/
+//   /*解决ios下表单圆角的问题*/
+//   /*框架搭建*/
+//   html {
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+//   }
+//   body {
+//     width: 100%;
+//     height: 100%;
+//     overflow: auto;
+//   }
+
+
+//   头部
+.header_menu{
+    margin-top:10/$rem*1rem;
+    width:100%;
+    height:77/$rem*1rem;//sass换算REM
+    box-sizing: border-box;
+    background:$color_menu;
+    color:$color_f;
+    font-size: 16/$rem*1rem;
+    text-align: center;
+    >div ul{
+        width: 670/$rem*1rem;
+        margin:0 auto; 
+        display: flex;
+        height:77/$rem*1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    >div ul li:nth-child(1){
+        width:50/$rem*1rem;
+    }
+    >div ul li:nth-child(2){
+    }
+    >div ul li:nth-child(3){
+        width:40/$rem*1rem;
+    }
+    >div ul li.font_title{
+        font-size:36/$rem*1rem;
+        color:$color_f;
+    }
+    >div ul li img{
+        min-width: 100%;
+    }
+
+}
+.banner{
+    width:100%;
+    height:280/$rem*1rem;
+    >img{
+        min-width: 100%;        
+    }
+}
+.notice{
+    width: 100%;
+    background: $color_pub;
+    color: #a0a0a0;
+    font-size:26/$rem*1rem; 
+    margin:0 auto;
+    height:84/$rem*1rem;
+    >ul{          
+        border-bottom:1px solid #333; 
+        width:670/$rem*1rem;      
+        margin:0 auto; 
+        display: flex;
+        height:77/$rem*1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    >ul li:nth-child(1){
+        text-align: center;
+        padding:4/$rem*1rem;
+        color:#e52848;
+        width:64/$rem*1rem;
+        border-radius: 5/$rem*1rem;
+        font-size: 24/$rem*1rem;
+        border:2/$rem*1rem solid #e52848;
+
+    } 
+    >ul li:nth-child(2){
+       
+    } 
+    >ul li:nth-child(3){
+        width:23/$rem*1rem;
+    }
+    >ul li img{
+        min-width: 100%;
+    }
+    
+}
+
+.data{   
+    text-align: center; 
+    background: $color_pub;
+    line-height: 45/$rem*1rem;
+    >ul{
+        height:180/$rem*1rem;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:670/$rem*1rem;
+    }
+    >ul>div {
+        width:204/$rem*1rem;
+        height:124/$rem*1rem;
+        border-right:1px solid #404040; 
+         
+    }
+   .data_title{
+       color:$color_f;
+       font-size: 26/$rem*1rem;
+   }
+   .data_font{
+       color:#00f901;
+       font-size: 35/$rem*1rem;
+   }
+   .data_font_r{
+    color:#e52848;
+    font-size: 35/$rem*1rem;
+   }
+   .data_o{
+       color:#999;
+       font-size: 24/$rem*1rem;
+   }
+    >ul>div:nth-child(3){
+        border-right:none;
+    }
+    >ul>div>ul>li{
+        padding:0 15/$rem*1rem;
+    }
+    >ul>div>ul>li span:first-child{
+        float:left;
+    }
+    >ul>div>ul>li span:last-child{
+        float:right;
+    }
+}
+
+.menu_ico{
+    margin-top:20/$rem*1rem;
+    width:100%;
+    background: $color_pub;
+    .menu_font_x{
+        font-size: 32/$rem*1rem;
+        color:$color_f;
+    }
+    >ul{
+        margin:0 auto;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        width:640/$rem*1rem;
+        height:140/$rem*1rem;
+    }
+    >ul>div{
+        margin:0 auto;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        width:280/$rem*1rem;
+        height:60/$rem*1rem;
+        border-right:1px solid #404040;
+    }
+    >ul>div:last-child{
+        border:none;
+    }
+    >ul>div>ul{
+        display: flex; 
+        align-items: center;       
+    }
+    >ul>div>ul li{
+        margin:auto 8/$rem*1rem;
+    }
+    >ul>div>ul li:first-child{
+        width:64/$rem*1rem;
+    }
+    >ul>div>ul li:first-child img{
+        min-width: 100%;
+    }
+    
+}
+.news_content{
+    margin-top: 20/$rem*1rem;
+    background: $color_pub;
+    width:100%;
+    >div.news_tag{
+        width:670/$rem*1rem;
+        height:90/$rem*1rem;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+    >div.news_tag ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    >div.news_tag ul li{ 
+        font-weight: bold;
+        width: 330/$rem*1rem;       
+        font-size: 30/$rem*1rem;
+        color:#666;
+    }
+    >div.news_list{
+        border-top:1px solid #404040;
+        padding: 20px 0;
+        margin:0 auto;
+        width:670/$rem*1rem;
+        text-align: justify;
+    }
+    .news_title{  
+        font-size:30/$rem*1rem;
+        color:$color_f;
+        line-height: 62/$rem*1rem;
+    }
+    .news_title{
+        display: flex;
+    }
+    .news_list_info{
+        display: inline-block;
+        font-size: 26/$rem*1rem;
+        line-height: 42/$rem*1rem;
+        color:#666;
+    }
+    .news_title span{
+        margin-right:20/$rem*1rem;
+    }
+    >div.news_list>ul li a{
+        text-decoration: none;
+        color:#999;
+        float: right;
+    }
+}
+.bottom{
+    width:100%;
+    height:110/$rem*1rem;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background:$color_menu;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    >ul{       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        width:50/$rem*1rem;
+        height:90/$rem*1rem;
+        color:#dadada;
+    }
+    >ul li{
+        margin:2/$rem*1rem 0;
+        font-size: 18/$rem*1rem;
+        width:100%;
+
+    }
+    >ul li img{
+        min-width: 100%;
+    }
+}
